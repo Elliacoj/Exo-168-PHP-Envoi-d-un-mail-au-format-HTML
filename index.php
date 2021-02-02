@@ -8,8 +8,8 @@
  */
 
 $to = [
-    'j.conan@fondationface.org',
-    'amaury.jocaille@hotmail.com'
+    '',
+    ''
 ];
 
 $html = "
