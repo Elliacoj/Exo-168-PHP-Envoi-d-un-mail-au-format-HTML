@@ -27,9 +27,9 @@ $html = "
 
 foreach ($to as $item) {
     if(mail($item, "Mail", $html)) {
-        echo $item . ": success";
+        echo $item . ": success <br>";
     }
     else {
-        echo $item . ": error";
+        echo $item . ": error <br>";
     }
 }
