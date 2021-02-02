@@ -9,19 +9,27 @@
 
 $to = [
     'j.conan@fondationface.org',
-    ...
+    'amaury.jocaille@hotmail.com'
 ];
 
-$html = '
-    <html lang="fr">
+$html = "
+    <html lang='fr'>
         <head>
             <title>Mes actualités</title>
         </head>
         <body>
             <div>
-                <!-- Vos actualités ici -->
+                Bonjour à tous, voici un mail d'actualité
             </div>
         </body>
     </html>
-';
+";
 
+foreach ($to as $item) {
+    if(mail($item, "Mail", $html)) {
+        echo $item . ": success";
+    }
+    else {
+        echo $item . ": error";
+    }
+}
